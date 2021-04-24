@@ -1,0 +1,865 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+.thanhdiachi{
+	width: 100%;
+	height: 35px;
+	background-color: black;
+}
+.thanhdiachi ul li{
+	list-style-type: none;
+	padding-right: 100px;
+}
+.thanhdiachi ul li a{
+	float: right;
+	color: white;
+	padding:0px 20px;
+	line-height: 35px;
+}
+.thanhdiachi a:hover{
+	color: red;
+	transition: ease-in 0.35s;
+}
+.container{
+	margin-top: 0 auto;
+	width: 100%;
+	height: 5350px;
+	background-color: #fff; 
+}
+.container .main{
+	width: 1100px;
+	height: 5450px;
+	/*background-color:green;*/
+	margin: 40px auto 0px auto;
+}
+#advertis{
+	background-color: #BDC3C8;
+	height: 100px;
+	width: 750px;
+	float: right;
+	position: relative;
+}
+#advertis #qcao img{
+	height: 100px;
+	width: 750px;
+}
+#advertis #onqc{
+	display: none;
+}
+#advertis #offqc {
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	position: absolute;
+	color: blue;
+	line-height: 15px;
+	right: 1px;
+	top: 1px;
+	text-align: center;
+}
+#advertis #offqc a {
+	color: blue;
+	line-height: 15px;
+}
+#advertis #offqc:hover{
+	background-color: black;
+}
+#advertis #offqc a:hover {
+	color:white;
+}
+#advertis #onqc a {
+	color: blue;
+}
+#advertis #onqc a:hover {
+	color:white;
+	background-color: black;
+}
+.leftlogo {
+	float: left;
+	height: 100px;
+	width: 250px;
+	padding-left: 60px;
+	padding-top: 5px;
+}
+.leftlogo img{
+	height: 100px;
+	width: 250px;
+}
+.menu{
+	clear: both;
+	height: 50px;
+	width: 1100px;
+	background-color: black;
+}
+.menu ul.root{
+	margin: 0;
+	padding: 0;
+}
+.menu ul.root > li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 50px;
+	padding: 0px 25px;
+	position: relative;
+}
+.menu li:last-child{
+	float: right;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+.menu ul.root > li a{
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.menu ul.root > li:hover{
+	background-color: #F64411;
+}
+.menu ul.root > li ul.sub{
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	list-style-type: none;
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	display: none;
+	transition: ease-in 0.35s;
+}
+.menu ul.root > li ul.sub > li{
+	width: 180px;
+	position: relative;
+}
+.menu ul.root > li > ul.sub > li a{
+	border-bottom: 1px solid #ccc;
+	display: block;
+	color: black;
+	padding-left: 20px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.menu ul.root > li:hover > ul.sub{
+	display: block;
+}
+.menu ul.root > li > ul.sub > li:last-child a{
+	text-align: center;
+	padding-right: 10px;
+}
+.menu ul.root > li > ul.sub > li a:hover{
+	color: #F64411;
+	transition: ease-in 0.35s;
+}
+.menu ul.root > li ul.sub > li > ul{
+	margin-left: 200px;
+	height: 200px;
+	width: 180px;
+	top: 0px;
+	background-color: #fff;
+	list-style-type: none;
+	position: absolute;
+	display: none;
+}
+.menu ul.root > li ul.sub > li > ul > li > a{
+	text-align: left;
+}
+.menu ul.root > li ul.sub > li:hover > ul{
+	display: block;
+	transition: ease-in 0.35s;
+}
+.main .left{
+	float: left;
+	width: 700px;
+	height: 5294px;
+	/*border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;*/
+}
+.main .left .menucon{
+	margin-top: 35px;
+	margin-left: 1px;
+}
+.main .left .menucon ul{
+	list-style-type: none;
+}
+.main .left .menucon ul li{
+	padding-left: 1px;
+}
+.main .left .menucon ul li a{
+	float: left;
+	color: #ccc;
+	padding-right: 20px;
+}
+.main .left .menucon ul li a:hover{
+	color: black;
+}
+.main .left .menucon li:last-child a{
+	line-height: 15px;
+	height: 15px;
+	width: 70px;
+	float: left;
+	clear: left;
+	padding-left: 1px;
+	background-color: black;
+}
+.main .left .menucon li:last-child{
+	padding-top: 30px;
+}
+.main .left .menucon li:last-child a:hover{
+	color: white;
+	padding-left: 20px;
+}
+.main .left .menucon h1{
+	text-align: justify;
+	float: left;
+	clear: left;
+	padding-top: 10px;
+	font-size: 2.5em;
+}
+.left .logofacebook{
+	clear: left;
+	height: 30px;
+	width: 125px;
+	background-color:#0069E4;
+	border-radius: 7px;
+}
+.left .logofacebook ul{
+	list-style-type: none;
+}
+.left .logofacebook ul li {
+	float: left;
+	padding:0px 5px;
+}
+.left .logofacebook ul li a{
+	color: white;
+	line-height: 30px;
+	font-size: 14px;
+}
+.iconitem {
+	margin-top: 30px;
+	height: 50px;
+	width: 120px;
+}
+.iconitem1{
+	height: 50px;
+	width: 50px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	float: left;
+	margin-right: 5px;
+}
+.iconitem1 img{
+	height: 50px;
+	width: 50px;
+}
+.iconitem1 img:hover{
+	opacity: 0.8;
+}
+.itemcontent{
+	margin-top: 35px;
+	clear: both;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom:1px solid black;
+	border-radius: 10px;
+}
+.itemcontent ol{
+	list-style-type: cjk-ideographic;
+	padding-top: 10px;
+	padding-left: 25px;
+	font-weight: bold;
+}
+.itemcontent ol li{
+
+}
+.itemcontent ul li{
+	list-style-type: circle;
+	color: black;
+	padding-left: 20px;
+	padding: 5px 0px;
+}
+.itemcontent ul li a{
+	color: gray;
+}
+.itemcontent ul li a:hover{
+	color: #F64411;
+}
+.allow{
+	margin-top: 20px;
+}
+.allow h3{
+	padding-top: 5px;
+	text-align: right;
+	padding-right: 1px;
+}
+.allow a{
+	color: #F64411;
+}
+.allow a:hover{
+	text-decoration: underline #F64411;
+}
+.allow p{
+	padding-top: 10px;
+	font-style: italic;
+	font-size: 19px;
+	text-align: justify;
+}
+.allow p a{
+	color: black;
+	font-weight: bold;
+}
+.dbconvention{
+	margin-top: 30px;
+	height: 60px;
+	width: 700px;
+	background-color: #BDC3C8;
+	line-height: 60px;
+}
+.dbconvention a{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline black;
+	padding-left: 25px;
+}
+.dbconvention a:hover{
+	text-decoration: underline #F64411;
+}
+.bigdata{
+	margin-top: 30px;
+	height: 60px;
+	width: 700px;
+	background-color: #BDC3C8;
+	line-height: 60px;
+}
+.bigdata a{
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline black;
+	padding-left: 25px;
+}
+.bigdata a:hover{
+	text-decoration: underline #F64411;
+}
+.concept{
+	margin-top: 20px;
+}
+.concept h1{
+	font-size: 2.5em;
+	padding-left: 1px;
+	padding-bottom: 30px;
+}
+.concept p a{
+	font-size: 17px;
+	color: #BDC3C8;
+	text-align: justify;
+	padding:5px 1px;
+}
+.imgtutorial {
+	margin-top: 35px;
+	height: 550px;
+	width: 700px;
+} 
+.imgtutorial  a img {
+	margin-top: 35px;
+	height: 450px;
+	width: 700px;
+}
+.imgtutorial p{
+	padding-top: 30px;
+	text-align: center;
+	font-style: italic;
+}
+.roledb{
+	margin-top: 10px;
+}
+.roledb h1{
+	padding-left: 1px;
+	font-size: 2.5em;
+}
+.roledb p{
+	padding-top: 35px;
+	text-align: justify;
+}
+.paradigm {
+	margin-top: 35px;
+}
+.paradigm h1{
+	padding-left: 1px;
+	font-size: 2.5em;
+}
+.paradigm ul{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.paradigm ul li{
+	list-style-type: circle;
+	padding: 15px 5px;
+}
+.applycation {
+	margin-top: 10px;
+}
+.applycation h1 {
+	padding-left: 1px;
+	font-size: 2.5em;
+}
+.applycation p{
+	padding-top: 20px;
+	text-align: justify;
+	padding-left: 1px;
+}
+.care {
+	margin-top: 30px;
+}
+.care h3{
+	padding-left: 1px;
+}
+.care ul {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.care ul li {
+	list-style-type: circle;
+}
+.care a{
+	color:#F64411 ;
+	text-decoration: none;
+}
+.jobdev{
+	margin-top: 20px;
+}
+.jobdev h3{
+	text-align: center;
+}
+.jobdev a{
+	color: #F64411;
+}
+.jobdev a:hover{
+	text-decoration: underline #F64411;
+}
+.report{
+	margin-top: 20px;
+}
+.report p{
+	text-align: right;
+	padding-right: 1px;
+}
+.report a{
+	color: #EEB91D;
+	text-decoration: underline #EEB91D ;
+}
+#ending{
+	margin-top: 30px;
+	height: 450px;
+	width: 700px;
+	position: relative;
+}
+#ending #maintop img{
+	height: 450px;
+	width: 700px;
+}
+#ending #offtop{
+	height: 20px;
+	width: 700px;
+	background-color:#fff; 
+	position: absolute;
+	text-align: left;
+}
+#ending #offtop a{
+	font-size: 15px;
+	color: blue;
+	line-height: 20px;
+	left: 1px;
+}
+#ending #offtop:hover{
+	background-color: black;
+}
+#ending #offtop a:hover{
+	color: #EEB91D;
+}
+#ending #ontop{
+	display: none;
+}
+#ending #ontop a{
+	color: blue;
+}
+#ending #ontop a:hover{
+	color: #EEB91D;
+}
+.synthetic{
+	height: 250px;
+	width: 700px;
+	margin-top: 30px;
+}
+.synthetic img{
+	height: 250px;
+	width: 700px;
+}
+.tags{
+	height: 50px;
+	width: 700px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 50px;
+}
+.tags ul{
+	padding-left: 10px;
+}
+.tags ul li {
+	height: 20px;
+	width: 150px;
+	list-style-type: none;
+	display: inline-block;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	text-align: center;
+	line-height: 20px;
+}
+.tags li:first-child{
+	background-color: black;
+}
+.tags a:first-child{
+	color: #ccc;
+}
+.tags li:hover{
+	color: black;
+	background-color: #F64411;
+}
+.left .logofacebook{
+	margin-top: 30px;
+	clear: left;
+	height: 30px;
+	width: 125px;
+	background-color:#0069E4;
+	border-radius: 7px;
+}
+.left .logofacebook ul{
+	list-style-type: none;
+}
+.left .logofacebook ul li {
+	float: left;
+	padding:0px 5px;
+}
+.left .logofacebook ul li a{
+	color: white;
+	line-height: 30px;
+	font-size: 14px;
+}
+.iconitem {
+	margin-top: 30px;
+	height: 70px;
+	width: 700px;
+	border-bottom: 1px solid #ccc;
+}
+.iconitem1{
+	height: 40px;
+	width: 100px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	float: left;
+	margin-right: 5px;
+}
+.iconitem1 img{
+	height: 40px;
+	width: 100px;
+}
+.iconitem1 img:hover{
+	opacity: 0.8;
+}
+.doublemenu{
+	margin-top: 25px;
+	height: 40px;
+	width: 700px;
+	background-color: black;
+}
+.doublemenu ul{
+	padding-left: 20px;
+}
+.doublemenu ul li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 40px;
+	padding-left: 100px;
+}
+.doublemenu a{
+	color: white;
+}
+.gridimage{
+	margin-left: 40px;
+	margin-top: 25px ;
+	width: 620px;
+	height: 900px;
+	display: grid;
+	grid-template-columns: 150px 150px 150px;
+	grid-template-rows: 200px 200px 200px 200px;
+	grid-row-gap: 30px;
+	grid-column-gap: 60px;
+}
+.gridimage .gridimage1{
+	height: 150px;
+	width: 200px;
+}
+.gridimage .gridimage1 img{
+	height: 150px;
+	width: 200px;
+}
+.gridimage .gridimage1 a:hover{
+	color:#F64411 ;
+}
+.site{
+	height: 60px;
+	width: 80px;
+	margin-top: 30px;
+}
+.site .nextsite{
+	float: left;
+	margin-right: 5px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.site .nextsite p{
+	text-align: center;
+}
+.site .nextsite:hover{
+	background-color: #F64411;
+	opacity: 0.8;
+}
+.site .nextsite a:hover{
+	color: white;
+}
+.site .backsite{
+	float: left;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.site .backsite p{
+	text-align: center;
+}
+.site .backsite:hover{
+	background-color: #F64411;
+	opacity: 0.8;
+}
+.site .backsite a:hover{
+	color: white;
+}
+.right{
+	float:right;
+	height: 5293px;
+	width: 350px;
+	/*border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;*/
+}
+.search{
+	margin-top: 50px;
+}
+.search1 input{
+	width: 70px;
+	height: 40px;
+	background-color: black;
+	color:white;
+	float: right;
+}
+.search1 input:hover{
+	background-color: #F64411;
+}
+.search2 input{
+	margin-top: 1px;
+	float: right;
+	clear: left;
+	height: 35px;
+	width: 276px;
+}
+.dontforget{
+	clear: both;
+	height: 35px;
+	width: 350px;
+	margin-top: 140px;
+	background-color: black;
+	line-height: 35px;
+}
+.dontforget h4{
+	color: white;
+	text-align: center;
+}
+.sql{
+	margin-top: 30px;
+}
+.sql ul li{
+	list-style-type: none;
+	padding-top: 10px;
+}
+.sql a:hover{
+	color: #F64411;
+}
+.hightsalary{
+	margin-top: 35px;
+	height: 35px;
+	width: 350px;
+	background-color: black;
+}
+.hightsalary h4{
+	text-align: center;
+	color: white;
+	line-height: 35px;
+}
+.webdeveloper{
+	margin-top: 30px;
+}
+.webdeveloper ul{
+	padding-left: 20px;
+}
+.webdeveloper ul li{
+	list-style-type: circle;
+	padding-top: 10px;
+}
+.webdeveloper a{
+	color: #48A3F2;
+}
+.webdeveloper a:hover{
+	color:  #F64411;
+	text-decoration: underline #F64411;
+}
+#rightqc{
+	margin-top: 30px;
+	background-color: #BDC3C8;
+	height: 250px;
+	width: 350px;
+	float: right;
+	position: relative;
+}
+#rightqc #atvertist img{
+	height: 250px;
+	width: 350px;
+}
+#rightqc #onatvertist{
+	display: none;
+}
+#rightqc #offatvertist {
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	position: absolute;
+	color: blue;
+	line-height: 15px;
+	right: 1px;
+	top: 1px;
+	text-align: center;
+}
+#rightqc #offatvertist a {
+	color: blue;
+	line-height: 15px;
+}
+#rightqc #offatvertist:hover{
+	background-color: black;
+}
+#rightqc #offatvertist a:hover {
+	color:white;
+}
+#rightqc #onatvertist a {
+	color: blue;
+}
+#rightqc #onatvertist a:hover {
+	color:white;
+	background-color: black;
+}
+.footer{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	clear: both;
+	margin-top:100px;
+	height: 450px;
+	width: 100%;
+	background-color:black;
+}
+.topfooter{
+	margin: 0 auto;
+	height: 60px;
+	width: 800px;
+	border-bottom: 1px solid #ccc;
+}
+.logofooter {
+	margin-left: 130px;
+	float: left;
+	margin-top: 50px;
+	height: 350px;
+	width: 350px;
+}
+.logofooter img{
+	height: 70px;
+	width: 280px;
+}
+.contentfooter {
+	float: left;
+	margin-top: 50px;
+	height: 350px;
+	width: 400px;
+}
+.contentfooter h3{
+	color: white;
+}
+.contentfooter p{
+	text-align: justify;
+	padding-top: 20px;
+	color: white;
+}
+.contentfooter a{
+	color:  #F64411;
+}
+.follow {
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 350px;
+	width: 350px;
+}
+.follow h3{
+	padding-left: 10px;
+	color: white;
+}
+.threelogo{
+	margin-top: 40px;
+}
+.threelogo .logotwitter{
+	float: left;
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.threelogo .logotwitter img{
+	height: 50px;
+	width: 50px;
+}
+.threelogo .logotwitter img:hover{
+	opacity: 0.6;
+	transition: all 1s;
+	transform: scale(1.5,2);
+}
